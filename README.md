@@ -8,7 +8,7 @@ Per generare nuovi tweets senza installare nulla potete seguire le istruzioni in
 
 ## Tweets originali
 
-Nella cartella ``tweets`` si trovano tutti i tweets dell'account [@matteosalvinimi](https://twitter.com/matteosalvinimi) dall'inizio del suo account fino ad inizio Ottobre 2019.
+Nella cartella ``data`` si trovano tutti i tweets dell'account [@matteosalvinimi](https://twitter.com/matteosalvinimi) dall'inizio del suo account fino ad inizio Ottobre 2019.
 
 I files sono in JSON e CSV.
 (CSV è una tabella e può  anche essere aperto da Excel o simili.)
