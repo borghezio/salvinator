@@ -1,8 +1,12 @@
 # The Salvinator 🤖
 
-Abbiamo scaricato più di 30.000 tweets di Matteo Salvini per insegnare ad un intelligenza artificiale a twittare come lui. Qua trovate il codice, i modelli già allenati e il dataset (tutti i suoi tweets).
+[salvinator.github.io](https://salvinator.github.io)
 
-Potete provare una demo di tweets pre-generati [qui](https://editor.p5js.org/banano/full/w4cW8FKYY).
+Abbiamo insegnato ad una intelligenza artificiale a twittare come Matteo Salvini.
+Per farlo abbiamo allenato un algoritmo con tutti e trentamila i suoi tweets.
+Qua trovate il codice, i modelli già allenati, ed il dataset (tutti i suoi tweets).
+
+Potete provare una demo di tweets pre-generati [qui](https://salvinator.github.io).
 
 Per generare nuovi tweets senza installare nulla potete seguire le istruzioni in questo [Colab notebook](https://colab.research.google.com/drive/199Clx5klRbYxKPCu7obZkrSYQdQd6g5M) (Chrome only).
 
@@ -20,7 +24,7 @@ Per fare lo scraping è stato utilizzato [questo script](https://github.com/bpb2
 Per generare tweets di Salvini sono stati utilizzati due modelli diversi di machine learning: [LSTM](https://en.wikipedia.org/wiki/Long_short-term_memory) e [GPT-2](https://openai.com/blog/better-language-models/). 
 
 LSTM è più snello e si può utilizzare in un website, ma è molto meno accurato. 
-GPT-2 è molto accurato, ma è un po' più laborioso da far girare, soprattutto se non si ha un po' di comprensione di base di python. 
+GPT-2 è molto accurato, ma è un po' più laborioso da far girare, soprattutto se non si ha una comprensione di base di python. 
 
 Il modello GPT-2 di Salvini inoltre pesa ~500Mb, contro i 3mb di quello LSTM.
 
@@ -38,7 +42,7 @@ Il modello LSTM può generalmente essere utilizzato con le implementazioni di [c
 Il modello da utilizzare con GPT-2 lo potete scaricare [qui](https://transfer.sh/k7gSC/run1.tar.xz), pesa circa 500Mb.
 
 Per allenare il modello è stato utilizzato questo [Colab Notebook](https://colab.research.google.com/drive/1VLG8e7YSEwypxU-noRNhsv5dW4NfTGce#scrollTo=H7LoMj4GA4n_), utilizzando il modello minore (124M) e learning rate 1e-4. 
-Al momento, dopo circa 8 ore di training siamo arrivati ad una loss di 1.42.
+Dopo circa 8 ore di training siamo arrivati ad una loss di 1.42.
 
 *SI POTREBBE FARE DI MEGLIO. #dimartedi*
 
@@ -65,7 +69,7 @@ Nella cartella ```esempi/gpt2``` c'è una cartella ```salvinator``` che contiene
 
 Nella cartella ```gpt2salvini``` si trova invece il programma in python per generare nuovi tweets.
 
-Per prima cosa si deve scaricare il modello allemato sui tweets di Salvini.
+Per prima cosa si deve scaricare il modello allenato sui tweets di Salvini.
 In OSX basta andare dal terminale nella cartella ```gpt2salvini``` e far partire:
 ```
 curl -SL https://transfer.sh/k7gSC/run1.tar.xz | tar -xf - -C checkpoint
@@ -99,9 +103,13 @@ Se lo lanciate la prima volta eseguite anche le due linee per scaricare i modell
 
 In un paio di minuti dovrebbe generare una serie di tweets, in base ai parametri spiegati nel codice. 
 
-Per cambiare i parametri tipo numero di tweets, tempratura, etc. seguite le istruzioni sulla pagina di [gpt-2-simple](https://github.com/minimaxir/gpt-2-simple).
+Per cambiare i parametri tipo numero di tweets, temperatura, etc. seguite le istruzioni sulla pagina di [gpt-2-simple](https://github.com/minimaxir/gpt-2-simple).
 
 ## Licenza
+
+No copyright
+
+MIT license
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
