@@ -10,7 +10,7 @@ Potete provare una demo di tweets pre-generati [qui](https://salvinator.github.i
 
 Per generare nuovi tweets senza installare nulla potete seguire le istruzioni in questo [Colab notebook](https://colab.research.google.com/drive/199Clx5klRbYxKPCu7obZkrSYQdQd6g5M) (Chrome only).
 
-Probabilmente si potrebbe fare un account Twitter che posta in automatico, ma poi abbiamo pensato, fuck Twitter.
+Probabilmente si potrebbe fare un account Twitter che posta in automatico, ma poi abbiamo pensato ~~troppo sbatti~~ fuck Twitter.
 
 ## Tweets originali
 
