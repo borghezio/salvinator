@@ -2,9 +2,9 @@
 
 [salvinator.github.io](https://salvinator.github.io)
 
-Abbiamo insegnato ad una intelligenza artificiale a twittare come Matteo Salvini.
-Per farlo abbiamo allenato un algoritmo con tutti e trentamila i suoi tweets.
-Qua trovate il codice, i modelli già allenati, ed il dataset (tutti i suoi tweets).
+Salvinator è una intelligenza artificiale a cui e stato insegnato a twittare come Matteo Salvini.
+Per allenarla è stato utilizzato l'intero corpo di trentamila tweets del suo account ufficiale.
+In questa repository trovate il codice, i modelli già allenati, ed il dataset (tutti i suoi tweets).
 
 Potete provare una demo di tweets pre-generati [qui](https://salvinator.github.io).
 
